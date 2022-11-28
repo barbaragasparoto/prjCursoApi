@@ -14,6 +14,10 @@ public class Curso {
     private Integer id;
 
     @Column
-    private String nomecurso;
+    private String nome;
+
+
+
+
 
 }
