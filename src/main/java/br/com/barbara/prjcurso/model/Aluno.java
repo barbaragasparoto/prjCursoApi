@@ -16,4 +16,8 @@ public class Aluno {
     @Column
     private String nomealuno;
 
+    @ManyToOne
+    @JoinColumn(name = "cursoid")
+    private Curso curso;
+
 }

@@ -12,12 +12,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cursos")
-
 public class CursoController {
 
     @Autowired
     private CursoRepository cursoRepository;
-
 
     @GetMapping("/todos")
     public List<Curso> listarCursos() {

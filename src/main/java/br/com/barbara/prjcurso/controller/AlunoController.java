@@ -12,13 +12,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/alunos")
-
 public class AlunoController {
 
-  @Autowired
+    @Autowired
     private AlunoRepository alunoRepository;
 
-  @GetMapping("/todos")
+    @GetMapping("/todos")
     public List<Aluno> ListarAlunos() { return alunoRepository.findAll(Sort.by("nomealuno")); }
 
 }
